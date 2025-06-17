@@ -90,10 +90,22 @@ text-align: center;
 
 /*Koniec*/
 
+.logo {
+ 
+  z-index: 10001;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 15px;
+}
 
+.logoimg {
+  height: 12%;
+  width: 12%;
+  display: block;
+}
 
 .tryb {
-  display: none; /* Pokazujemy ikonę */
+  display: none; 
   cursor: pointer;
   transition: 0.3s ease-in-out;
   margin-top: 5px;
@@ -129,7 +141,7 @@ text-align: center;
 
 .menu {
   
-  justify-content: right;
+  justify-content: space-between;
   width: 100%;
   position:fixed;
   top:0;
@@ -210,41 +222,45 @@ text-decoration: none;
 
 
 .head {
-  display: flex;
-  justify-content: center;
   position: relative;
-  height: auto;
-  
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .headimg {
-  display: block;
-  transform: scale(100%);
-  position: relative;
-  height: auto;
-  width: 100%;
-  margin-top: -10%;
-  z-index: 100;
-  filter: blur(1px);
-  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
 }
 
 .headt {
   position: absolute;
   justify-content: center;
   align-items: center;
+
   flex-direction: column;
   display: flex;
-  top: 40%;
+  
   z-index: 101;
   text-align: center;
+  background-color: white;
+  height: 100vh;
+  width: 50%;
   
 }
 
 .headtt {
   color: rgb(0, 0, 0);
   font-size: 4vw;
-
+  
   width: 100%;
   letter-spacing: 0.08em;
 
