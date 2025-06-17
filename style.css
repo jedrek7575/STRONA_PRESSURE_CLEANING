@@ -1,0 +1,803 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+html {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.tab-content {
+  display: flexbox;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  min-height: 200vh;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  }
+
+
+#wrapper {
+background: transparent;
+width: 100%;
+height: 100vh;
+margin:0;
+flex: 1;
+flex-direction: column;
+display: flex;
+position: relative;
+text-align: center;
+}
+
+
+
+
+/*Przełączanie między kartami*/
+
+
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.tab:hover {
+  border-bottom: 3px solid;
+  transition: 0.1s ease-in-out;
+  border-radius: 0px;
+  color: black;
+}
+
+.tab.active {
+  border-bottom: 3px solid;
+  
+  color: black;
+  border-radius: 4px;
+  border-radius: 0px;
+}
+
+/*Koniec*/
+
+
+
+.tryb {
+  display: none; /* Pokazujemy ikonę */
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background: transparent;
+  border: none;
+}
+
+
+.line {
+  width: 55px;
+  height: 8px;
+  background: linear-gradient(40deg, rgb(0, 0, 0), rgb(43, 42, 42));
+  margin: .6em;
+  border-radius: 0px;
+  transition: .3s ease-in-out;
+  border: solid 0.001px;
+}
+
+.tryb.active .line:nth-child(1) {
+  transform: translateY(16px) rotate(45deg);
+}
+
+.tryb.active .line:nth-child(2) {
+  opacity: 0; /* Ukrywamy środkową linię */
+}
+
+.tryb.active .line:nth-child(3) {
+  transform: translateY(-16px) rotate(-45deg);
+}
+
+
+
+.menu {
+  
+  justify-content: right;
+  width: 100%;
+  position:fixed;
+  top:0;
+  left:0;
+  padding: 0;
+  display:flex;
+  flex-direction: row;
+  z-index: 1001;
+  background: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.menu.white {
+  background: white;
+}
+
+.menu {
+  transition:  0.3s ease-in-out;
+}
+
+
+
+.dropdown {
+border: none;
+cursor: pointer;
+position: relative;
+display: inline-block;
+z-index: 1000;
+}
+
+
+
+.rozwijane-menu {
+  
+  filter: drop-shadow(5px 7px 12px rgba(0, 0, 0, 0.4));
+  list-style-type: none;
+  top: -10px;
+  right: 0;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  transform: translateY(20%);
+  opacity: 1;
+  z-index: 1001;
+}
+
+
+
+
+
+.tab {
+padding: 25px;
+padding-bottom: 2vh;
+font-size: 1vw;
+padding-top: 15px;
+width: auto;
+color: rgb(112, 112, 112);
+text-decoration: none;
+
+
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+  font-weight: 557;
+  font-style: normal;
+
+}
+
+
+
+
+
+
+
+
+
+/*Strona główna*/
+
+
+.head {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: auto;
+  
+}
+
+.headimg {
+  display: block;
+  transform: scale(100%);
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-top: -10%;
+  z-index: 100;
+  filter: blur(1px);
+  opacity: 0.7;
+}
+
+.headt {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  top: 40%;
+  z-index: 101;
+  text-align: center;
+  
+}
+
+.headtt {
+  color: rgb(0, 0, 0);
+  font-size: 4vw;
+
+  width: 100%;
+  letter-spacing: 0.08em;
+
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.headttt {
+  color: rgb(0, 0, 0);
+  font-size: 3vw;
+  margin-top: 2%;
+
+  width: 100%;
+  letter-spacing: 0.10em;
+  margin-top: 10%;
+
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+.parallax1 {
+  width: 50%;
+  height: 100vh;
+  background-image: url('par1.jpg'); 
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 150% 100%;
+  position: relative;
+  float: right;
+  z-index: 1;
+}
+
+.sekcja1 {
+  width: 50%;
+  height: 100vh;
+  background: white;
+  position: relative;
+  z-index: 2;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+  border: 5px solid;
+}
+
+.bio {
+  font-size: 4vw;
+  letter-spacing: 0.08em;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  opacity: 0;
+
+  transition: 0.7s ease-in-out;
+
+}
+
+.bio.visible {
+  opacity: 1;
+}
+
+.reveal {
+  font-size: 1.4vw;
+  margin-bottom: 10%;
+  margin-top: 10%;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.zapro {
+  
+  display: flex;
+  height: 50%;
+  width: 100%;
+  justify-content: center;
+}
+
+.zapro1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.zapro2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.marzysz {
+  font-size: 1.2vw;
+      font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.produca {
+
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2vw;
+}
+
+.dolacz {
+  width: 90%;
+  height: 15%;
+  border-radius: 15px;
+  transition: 0.3s ease-in-out;
+  border: 3px solid;
+  border-color: black;
+  background-color: rgb(219, 215, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 10%;
+  display: flex;
+  padding: 10%;
+}
+
+.dolacz:hover {
+  transform: scale(120%);
+  background-color: rgb(255, 180, 180);
+}
+
+.dolacza {
+  font-size: 2vw;
+  text-decoration: none;
+  list-style-type: none ;
+  color: black;
+  border: none;
+      font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+
+.sekcja1 {
+  z-index: 1;
+}
+
+.galeria {
+  height: auto;
+  width: 100%;
+  display: block;
+  position: relative;
+  background-color: black;
+  z-
+
+}
+
+.gl {
+  float: left;
+  width: 50%;
+  height: 120vh;
+  background-color: black;
+  padding: 2%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: end;
+  
+}
+
+.galeria1 {
+  width: 80%;
+  height: auto;
+  position: relative;
+  margin-bottom: 5%;
+
+  transition: 0.3s ease-in-out;
+}
+
+.z1 {
+  width: 100%;
+  height: auto;
+  border-radius: 1%;
+  
+}
+
+.galeria1:hover  {
+  scale: 110%;
+  z-index: 1000;
+}
+
+.galeria1:hover .z1t {
+  display: block;
+  opacity: 1;
+
+}
+
+.z1t {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+
+  letter-spacing: 0.08em;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.z1t p {
+  text-align: center;
+  font-size: 1vw;
+  color: white;
+}
+
+.z1t p:first-child {
+  font-size: 2vw;
+  padding-bottom: 8%;
+
+  letter-spacing: 0.08em;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+.galeria2 {
+  width: 80%;
+  height: auto;
+  position: relative;
+  z-index: 100;
+   transition: 0.3s ease-in-out;
+}
+
+.z2 {
+  width: 100%;
+  height: auto;
+
+  border-radius: 1%;
+  transition: 0.3s ease-in-out;
+}
+
+.galeria2:hover {
+  scale: 110%;
+  z-index: 1000;
+  
+}
+
+.galeria2:hover .z2t {
+  display: block;
+  opacity: 1;
+
+}
+
+.z2t {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  padding-bottom: 10%;
+  opacity: 0;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.z2t p {
+  text-align: center;
+  font-size: 1vw;
+  color: white;
+  padding: 1%;
+
+  letter-spacing: 0.08em;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+
+.z2t p:first-child {
+  font-size: 2vw;
+  padding-bottom: 8%;
+
+  letter-spacing: 0.08em;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.gr {
+  
+  width: 50%;
+  height: 120vh;
+  background-color: black;
+  padding: 2%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.galeria3 {
+  width: auto;
+  height: 80%;
+  position: relative;
+  display: flex;
+  float: right;
+  justify-content: left;
+  transition: 0.3s ease-in-out;
+  padding: 2%;
+  align-items: center;
+
+}
+
+.z3 {
+  width: auto;
+  height: 100%;
+
+  position: relative;
+
+  border-radius: 1%;
+  transition: 0.3s ease-in-out;
+}
+
+
+.galeria3:hover {
+  scale: 110%;
+  z-index: 1000;
+  
+}
+
+
+
+
+.galeria3:hover .z3t {
+  display: block;
+  opacity: 1;
+
+}
+
+.z3t {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  padding-bottom: 10%;
+  opacity: 0;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.z3t p {
+  text-align: center;
+  font-size: 1vw;
+  color: white;
+  padding: 1%;
+
+  letter-spacing: 0.08em;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+
+.z3t p:first-child {
+  font-size: 2vw;
+  padding-bottom: 8%;
+
+  letter-spacing: 0.08em;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@media (max-width: 1100px) {
+  /* Globalne dostosowania */
+
+  
+  /* Menu mobilne */
+  .tryb {
+    right: 25px;
+    display: block;
+    z-index: 1001;
+    position: fixed;
+    top: 0%;
+  }
+
+  .rozwijane-menu {
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(255, 255, 255, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    transform: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .rozwijane-menu.active {
+    display: flex;
+    opacity: 1;
+  }
+
+  .tab {
+    font-size: 6vw;
+    padding: 15px !important;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    color: #333;
+  }
+
+
+
+
+
+  /* Nagłówek */
+  .head {
+    height: 100vh;
+  }
+
+  .headimg {
+    width: auto;
+    height: 100vh;
+    margin-top: 0;
+    opacity: 0.5;
+  }
+
+  .headt {
+    top: 30%;
+    width: 90%;
+    left: 5%;
+  }
+
+  .headtt {
+    font-size: 8vw;
+  }
+
+  .headttt {
+    font-size: 6vw;
+    margin-top: 5%;
+  }
+
+  /* Sekcja parallax */
+  .parallax1, .sekcja1 {
+    width: 100%;
+    height: 100vh;
+    float: none;
+  }
+
+  .parallax1 {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+
+  .sekcja1 {
+    padding: 5%;
+    height: 100vh;
+  }
+
+  .bio {
+    font-size: 6vw;
+    margin-top: 5%;
+  }
+
+  /* Galeria */
+  .galeria {
+    flex-direction: column;
+  }
+
+  .gl, .gr {
+    width: 100%;
+    height: auto;
+    float: none;
+    padding: 5%;
+    align-items: center !important;
+  }
+
+  .galeria1, .galeria2 {
+    width: 100%;
+    margin-bottom: 15%;
+  }
+
+  .galeria3 {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .z1, .z2, .z3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .z1t p, .z2t p, .z3t p {
+    font-size: 3.5vw;
+  }
+
+  .z1t p:first-child, 
+  .z2t p:first-child, 
+  .z3t p:first-child {
+    font-size: 5vw;
+  }
+
+  /* Efekty hover */
+  .galeria1:hover, 
+  .galeria2:hover, 
+  .galeria3:hover {
+    transform: scale(1.05);
+    scale: none;
+  }
+}
