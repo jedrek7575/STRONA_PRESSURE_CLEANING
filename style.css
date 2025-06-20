@@ -118,7 +118,7 @@ text-align: center;
 .line {
   width: 55px;
   height: 8px;
-  background: linear-gradient(40deg, rgb(0, 0, 0), rgb(43, 42, 42));
+  background-color: rgb(40, 46, 85);
   margin: .6em;
   border-radius: 0px;
   transition: .3s ease-in-out;
@@ -243,7 +243,7 @@ text-decoration: none;
 }
 
 .headt {
-  position: relative;
+  position: absolute;
 
   align-items: center;
   
@@ -252,7 +252,7 @@ text-decoration: none;
   
   z-index: 101;
   
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.7);
   height: 100vh;
   width: 40%;
   border-radius: 195% 0px 0px 990%;
@@ -317,7 +317,7 @@ text-decoration: none;
 }
 
 .numer {
-  background-color: red;
+  background-color: rgba(255, 79, 79, 0.5);
   position: absolute;
   display: flex;
   right: 5%;
@@ -723,10 +723,15 @@ font-size: 2vw;
 
   
   /* Menu mobilne */
+  .menu {
+    z-index: 1001;
+    
+  }
+
   .tryb {
     right: 25px;
     display: block;
-    z-index: 1001;
+    z-index: 1002;
     position: fixed;
     top: 0%;
   }
@@ -764,35 +769,110 @@ font-size: 2vw;
   }
 
 
-
-
-
-  /* Nagłówek */
   .head {
     height: 100vh;
+    display: flex;
+    position: relative;
+   
   }
 
   .headimg {
     width: auto;
     height: 100vh;
-    margin-top: 0;
     opacity: 0.5;
   }
 
   .headt {
-    top: 30%;
-    width: 90%;
-    left: 5%;
-  }
+  position: absolute;
+  bottom: 0;
+ 
+  align-items: center;
+  
+  flex-direction: column;
+  display: flex;
+  
+  z-index: 101;
+  
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 50%;
+  width: 100%;
+  border-radius: 125% 125% 0 0;
+  border-top: 25px solid rgb(40, 46, 85);
+  border-left: 0px;
+}
 
-  .headtt {
-    font-size: 8vw;
-  }
 
-  .headttt {
-    font-size: 6vw;
-    margin-top: 5%;
-  }
+
+.headtt {
+  color: rgb(0, 0, 0);
+  font-size: 2.5vw;
+  margin-top: 5%;
+  width: 100%;
+  letter-spacing: 0.08em;
+  
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.headttt {
+  color: rgb(0, 0, 0);
+  font-size: 3vw;
+ 
+
+  width: 100%;
+ 
+  
+
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.headtttt {
+
+}
+
+.social {
+  position: absolute;
+  bottom: 0;
+  font-size: 0;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.social img {
+  width: 17vw;
+  border-radius: 25px;
+  margin: 25px;
+}
+
+.social img:hover {
+  transform: scale(110%);
+  transition: ease-in-out 0.3s;
+}
+
+.numer {
+  background-color: red;
+  position: absolute;
+  display: flex;
+  right: 42.5%;
+  bottom: 35%;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.numer p {
+font-size: 2vw;
+}
+
 
   /* Sekcja parallax */
   .parallax1, .sekcja1 {
