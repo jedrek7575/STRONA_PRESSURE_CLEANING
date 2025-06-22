@@ -73,14 +73,14 @@ text-align: center;
 }
 
 .tab:hover {
-  border-bottom: 3px solid;
+  border-bottom: 5px solid;
   transition: 0.1s ease-in-out;
   border-radius: 0px;
   color: black;
 }
 
 .tab.active {
-  border-bottom: 3px solid;
+  border-bottom: 6px solid;
   
   color: rgb(40, 46, 85);
   border-radius: 4px;
@@ -264,8 +264,8 @@ text-decoration: none;
 
 .headtt {
   color: rgb(0, 0, 0);
-  font-size: 1.5vw;
-  
+  font-size: 1.3vw;
+  margin-top: 2%;
   width: 100%;
   letter-spacing: 0.08em;
   
@@ -277,8 +277,8 @@ text-decoration: none;
 
 .headttt {
   color: rgb(0, 0, 0);
-  font-size: 3vw;
- 
+  font-size: 2vw;
+  margin-top: 1%;
 
   width: 100%;
  
@@ -291,6 +291,41 @@ text-decoration: none;
 }
 
 .headtttt {
+  font-size: 3.5vw;
+  margin-top: 6%;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+  
+.headopis {
+  margin-top: 5%;
+}
+
+.headopis p {
+  font-size: 1vw;
+  margin-top: 1%;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.pytanie {
+  text-align: start;
+  margin-top: 5%;
+  margin-right: -20%;
+  margin-left: 15%;
+}
+
+.pytanie p {
+  font-size: 1.5vw;
+  margin-top: 1%;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 
 }
 
@@ -317,13 +352,25 @@ text-decoration: none;
 }
 
 .numer {
-  background-color: rgba(255, 79, 79, 0.5);
+  background-color: rgba(255, 79, 79, 0.2);
   position: absolute;
   display: flex;
   right: 5%;
   bottom: 5%;
-  border-radius: 10px;
-  padding: 2%;
+  border-radius: 250px;
+  padding: 3%;
+  border: 10px solid rgb(40, 46, 85);
+  transition: 0.3s ease-in-out;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: bold;
+  line-height: auto;
+  cursor: pointer;
+}
+
+.numer:hover {
+  transform: scale(110%);
 }
 
 .numer p {
@@ -852,11 +899,11 @@ font-size: 2vw;
   width: 17vw;
   border-radius: 25px;
   margin: 25px;
+  transition: 0.3s ease-in-out;
 }
 
 .social img:hover {
   transform: scale(110%);
-  transition: ease-in-out 0.3s;
 }
 
 .numer {
