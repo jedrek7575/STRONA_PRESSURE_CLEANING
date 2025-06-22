@@ -81,26 +81,7 @@ text-align: center;
 }
 
 
-.line {
-  width: 55px;
-  height: 8px;
-  margin: .6em;
-  border-radius: 0px;
-  transition: .3s ease-in-out;
-  border: solid 0.001px;
-}
 
-.tryb.active .line:nth-child(1) {
-  transform: translateY(16px) rotate(45deg);
-}
-
-.tryb.active .line:nth-child(2) {
-  opacity: 0; /* Ukrywamy środkową linię */
-}
-
-.tryb.active .line:nth-child(3) {
-  transform: translateY(-16px) rotate(-45deg);
-}
 
 
 
@@ -1154,10 +1135,44 @@ background-color: rgb(244, 255, 37);
 
   }
 
-  .line {
-    color: rgb(255, 255, 255);
-    background-color: white;
-  }
+.line {
+  width: 55px;
+  height: 8px;
+  margin: .6em;
+  border-radius: 25px;
+  transition: .3s ease-in-out;
+  border: solid 0.001px;
+}
+
+.tryb .line:nth-child(1) {
+ background: linear-gradient(45deg,rgb(232, 255, 150),  rgba(255, 255, 255, 0.848),rgba(255, 255, 255, 0.848));
+
+}
+
+
+.tryb .line:nth-child(2) {
+ background: linear-gradient(45deg, rgba(255, 255, 255, 0.848), rgb(232, 255, 150), rgba(255, 255, 255, 0.848));
+
+}
+
+
+.tryb .line:nth-child(3) {
+ background: linear-gradient(45deg, rgba(255, 255, 255, 0.848), rgba(255, 255, 255, 0.848),rgb(232, 255, 150) );
+
+}
+
+.tryb.active .line:nth-child(1) {
+  transform: translateY(16px) rotate(45deg);
+  
+}
+
+.tryb.active .line:nth-child(2) {
+  opacity: 0; /* Ukrywamy środkową linię */
+}
+
+.tryb.active .line:nth-child(3) {
+  transform: translateY(-16px) rotate(-45deg);
+}
 
 .karty.unzip {
   display:flex;
