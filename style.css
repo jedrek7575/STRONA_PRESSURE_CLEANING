@@ -1421,7 +1421,7 @@ font-size: 2vw;
   height: 100%;
   width: 100%;
   border: 5px solid rgb(40, 46, 85);
-  background-color: #ffffff65;
+  background-color: #ffffffa2;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -1437,7 +1437,7 @@ font-size: 2vw;
 
 .kostkatresc1:hover {
 transform: scale(100%);
-background-color: #9bd4ffa7;
+background-color: #ffffffa2;
 cursor: default;
 }
 
