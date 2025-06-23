@@ -57,18 +57,31 @@ text-align: center;
 
 .logo {
  
-  position: absolute;
-  margin-top: 5px;
-  margin-left: 1%;
+  position: relative;  
+ 
 }
 
 
 
 .logoimg {
-  height: 12%;
-  width: 12%;
-  display: block;
+  position: absolute;
+  height: 65px;
+  width: auto;
+  top: -30px;
+  left: 10px;
+
+  opacity: 1;
 }
+.logow {
+  position: absolute;
+  height: 65px;
+  width: auto;
+  top: -30px;
+  left: 10px;
+
+  opacity: 1;
+}
+
 
 .tryb {
   display: none; 
@@ -119,7 +132,9 @@ text-align: center;
   color: rgb(40, 46, 85); /* albo dowolny inny styl */
 }
 
-
+.white .logow {
+  opacity:0;
+}
 
 
 .dropdown {
@@ -790,13 +805,17 @@ color: inherit;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+
+
+  font-family: "Cinzel", serif;
   font-optical-sizing: auto;
+  font-weight: 900;
   font-style: normal;
 }
 
 .kostkatresc1 {
   height: 70%;
+  width:90%;
   border: 5px solid rgb(40, 46, 85);
   background-color: #ffffff9e;
   display: flex;
@@ -808,13 +827,16 @@ color: inherit;
   cursor: pointer;
   border-radius: 2%;
   margin-top: 120px;
-
+  
 }
 
 .kostkat {
   
   font-size: 2.5vw;
   font-weight: 900;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   
 }
 
@@ -827,19 +849,19 @@ background-color: rgb(244, 255, 37);
 .kostkaopis1 {
   margin-top: 5%;
   font-size: 1.5vw;
-  font-weight: 500;
+  font-weight: 900;
 }
 
 .kostkaopis2 {
   margin-top: 5%;
   font-size: 1.5vw;
-  font-weight: 500;
+  font-weight: 900;
 }
 
 .kostkaopis3 {
   margin-top: 5%;
   font-size: 1.5vw;
-  font-weight: 500;
+  font-weight: 900;
 }
 
 
@@ -872,7 +894,7 @@ background-color: rgb(244, 255, 37);
   
 }
 
-.parallax2 {
+.parallaxk {
   width: 40%;
   height: 100vh;
   background-image: url('z3.JPG'); 
@@ -883,6 +905,8 @@ background-color: rgb(244, 255, 37);
   position: relative;
   float: right;
   z-index: 1;
+  border: 5px solid;
+  border-left: none;
 }
 
 .sekcjakostka {
@@ -894,10 +918,196 @@ background-color: rgb(244, 255, 37);
   float: left;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  font-size: 1.1vw;
+  text-align: justify;
+  line-height: 140%;
+  border: 5px solid;
+
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.sekcjakostka p {
+  margin-top: 5%;
+}
+
+
+.myciekostki {
+  margin-bottom: 15%;
+  font-size: 2.5vw;
+
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.myciek1 {
+
+}
+
+
+
+.sekcjakostka2 {
+  width: 60%;
+  height: 100vh;
+  background: white;
+  position: relative;
+  z-index: 2;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  font-size: 1.1vw;
+  text-align: justify;
+  line-height: 140%;
+  border: 5px solid;
+  border-top: none;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.sekcjakostka2 p {
+  margin-top: 5%;
+}
+
+
+.myciekostki2 {
+  margin-bottom: 15%;
+  font-size: 2.5vw;
+
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.k2 {
+  width: 40%;
+  height: 100vh;
+  background-image: url('z1.JPG'); 
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: -50% -120%;
+  position: relative;
+  float: left;
+  z-index: 1;
+}
+
+
+
+.parallax3 {
+  width: 40%;
+  height: 100vh;
+  background-image: url(z1.JPG); 
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 250% -120%;
+  position: relative;
+  float: right;
+  z-index: 1;
+}
+
+.sekcjakostka3 {
+  width: 60%;
+  height: 100vh;
+  background: white;
+  position: relative;
+  z-index: 2;
+  float: left;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 0%;
+  padding-bottom: 15%;
+  font-size: 1.1vw;
+  text-align: justify;
+  line-height: 140%;
+  border: 5px solid;
+  border-top: none;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }
+.sekcjakostka3 p {
+  margin-top: 3%;
+}
+
+
+.myciekostki3 {
+  margin-top: 5%;
+  margin-bottom: 1%;
+  font-size: 2.5vw;
+
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.zadzwonk {
+  
+  margin-top: 5%;
+  align-self: center;
+  text-align: center;
+  border: 2px solid;
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .elewacjaafisz {
@@ -1113,10 +1323,18 @@ background-color: rgb(244, 255, 37);
 
   .logo {
     position: absolute;
-    top: 0;
-    left: 1%;
+    top: 45px;
+    left: 0px;
     z-index: 10000;
   }
+
+  .logoimg {
+    opacity: 0;
+  }
+
+.white .logow {
+  opacity:1;
+}
   
   .menu {
     height: 100vh;
@@ -1168,22 +1386,21 @@ background-color: rgb(244, 255, 37);
 }
 
 .tryb .line:nth-child(1) {
- background: linear-gradient(45deg,rgb(232, 255, 150),  rgba(255, 255, 255, 0.848),rgba(255, 255, 255, 0.848));
-  width: 100%;
+ background-color: white; 
+ width: 100%;
  align-self: flex-end;
  
 }
 
 
 .tryb .line:nth-child(2) {
- background: linear-gradient(45deg, rgba(255, 255, 255, 0.848), rgb(232, 255, 150), rgba(255, 255, 255, 0.848));
-  
+ background-color: white; 
 }
 
 
 .tryb .line:nth-child(3) {
- background: linear-gradient(45deg, rgba(255, 255, 255, 0.848), rgba(255, 255, 255, 0.848),rgb(232, 255, 150) );
-width: 60%;
+background-color: white;
+ width: 60%;
 align-self: flex-end;
 
 
@@ -1520,7 +1737,7 @@ cursor: default;
   
 }
 
-.parallax2 {
+.parallaxk {
   width: 100%;
   height: 100vh;
   background-image: url('z3.JPG'); 
