@@ -902,15 +902,18 @@ background-color: rgb(244, 255, 37);
   width: 40%;
   height: 100vh;
   background-image: url('z3.JPG'); 
-  background-size: 45%;
+  background-size: 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 100% 10%;
+  background-position: right center;
   position: relative;
   float: right;
   z-index: 1;
   border: 5px solid;
   border-left: none;
+  display: flex;
+  align-items: end;
+
 }
 
 .sekcjakostka {
@@ -1002,26 +1005,27 @@ background-color: rgb(244, 255, 37);
 .k2 {
   width: 40%;
   height: 100vh;
-  background-image: url('z1.JPG'); 
-  background-size: 80%;
+  background-image: url('k1.JPG'); 
+  background-size: 55%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: -50% -120%;
+  background-position: left center;
   position: relative;
   float: left;
   z-index: 1;
+  border: 5px solid;
+  border-left: none;
 }
-
 
 
 .parallax3 {
   width: 40%;
   height: 100vh;
-  background-image: url(z1.JPG); 
-  background-size: 80%;
+  background-image: url(przedipok.png); 
+  background-size: 45%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 250% -120%;
+  background-position: right -15vh;
   position: relative;
   float: right;
   z-index: 1;
