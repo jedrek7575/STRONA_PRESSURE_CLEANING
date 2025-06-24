@@ -49,3 +49,5 @@ document.querySelectorAll("h1").forEach(el => observerH1.observe(el));
 
 // Obserwowanie headtt
 document.querySelectorAll(".headtt").forEach(el => observerHeadtt.observe(el));
+
+

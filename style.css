@@ -28,6 +28,7 @@ html, body {
   overflow-x: hidden;
 }
 
+
 .tab-content {
   margin-top: 0px;
   margin-left: 0px;
@@ -811,9 +812,8 @@ color: inherit;
   align-items: center;
 
 
-  font-family: "Cinzel", serif;
+  font-family: "Chiron Sung HK", serif;
   font-optical-sizing: auto;
-  font-weight: 900;
   font-style: normal;
 }
 
@@ -853,19 +853,19 @@ background-color: rgb(244, 255, 37);
 .kostkaopis1 {
   margin-top: 5%;
   font-size: 1.5vw;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .kostkaopis2 {
   margin-top: 5%;
   font-size: 1.5vw;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .kostkaopis3 {
   margin-top: 5%;
   font-size: 1.5vw;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 
@@ -916,7 +916,8 @@ background-color: rgb(244, 255, 37);
 .sekcjakostka {
   width: 60%;
   height: 100vh;
-  background: white;
+  background: rgba(40, 46, 85, 0.197);
+  background: radial-gradient(white,rgba(40, 46, 85, 0.242));
   position: relative;
   z-index: 2;
   float: left;
@@ -933,9 +934,8 @@ background-color: rgb(244, 255, 37);
   line-height: 140%;
   border: 5px solid;
 
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: 800;
   font-style: normal;
 }
 .sekcjakostka p {
@@ -962,7 +962,7 @@ background-color: rgb(244, 255, 37);
 .sekcjakostka2 {
   width: 60%;
   height: 100vh;
-  background: white;
+  background: radial-gradient(white,rgba(40, 46, 85, 0.242));
   position: relative;
   z-index: 2;
   float: left;
@@ -979,9 +979,9 @@ background-color: rgb(244, 255, 37);
   line-height: 140%;
   border: 5px solid;
   border-top: none;
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
+
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: 800;
   font-style: normal;
 }
 .sekcjakostka2 p {
@@ -1030,7 +1030,7 @@ background-color: rgb(244, 255, 37);
 .sekcjakostka3 {
   width: 60%;
   height: 100vh;
-  background: white;
+  background: radial-gradient(white,rgba(40, 46, 85, 0.242));
   position: relative;
   z-index: 2;
   float: left;
@@ -1047,9 +1047,9 @@ background-color: rgb(244, 255, 37);
   line-height: 140%;
   border: 5px solid;
   border-top: none;
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
+
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: 800;
   font-style: normal;
 }
 .sekcjakostka3 p {
@@ -1058,7 +1058,7 @@ background-color: rgb(244, 255, 37);
 
 
 .myciekostki3 {
-  margin-top: 5%;
+  margin-top: 15%;
   margin-bottom: 1%;
   font-size: 2.5vw;
 
@@ -1068,15 +1068,38 @@ background-color: rgb(244, 255, 37);
   font-weight: 900;
 }
 
+.myciek3 {
+  margin-top: 5%;
+}
+
 .zadzwonk {
-  
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
   margin-top: 5%;
   align-self: center;
   text-align: center;
-  border: 2px solid;
+  border: 5px solid rgb(40, 46, 85);
   width: 50%;
+  padding: 2%;
+  border-radius: 25px;
+  text-decoration: none;
 }
 
+.zadzwonk a {
+  text-decoration: none;
+  color: inherit;
+
+  font-size: 2vw;
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.zadzwonk:hover {
+  transform: scale(110%);
+  background-color: rgb(244, 255, 37);
+}
 
 
 
@@ -1748,13 +1771,14 @@ cursor: default;
   width: 100%;
   height: 100vh;
   background-image: url('z3.JPG'); 
-  background-size: 120%;
+  background-size: 130%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 100% 60%;
   position: relative;
   float: right;
   z-index: 1;
+  border: none;
 }
 
 .sekcjakostka {
@@ -1766,37 +1790,65 @@ cursor: default;
   float: left;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 5%;
+  border: none;
+  font-size: 4vw;
 }
 
 .k2 {
-  width: 40%;
+  width: 100%;
   height: 100vh;
   background-image: url('z1.JPG'); 
-  background-size: 80%;
+  background-size: 600%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: -50% -120%;
+  background-position: 100% 20%;
   position: relative;
   float: left;
   z-index: 1;
 }
 
+.sekcjakostka2 {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  position: relative;
+  z-index: 2;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  font-size: 1.1vw;
+  text-align: justify;
+  line-height: 140%;
+  border: 0px solid;
+  border-top: none;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
 
 
 .parallax3 {
   width: 100%;
   height: 100vh;
   background-image: url(z1.JPG); 
-  background-size: 80%;
+  background-size: 400%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 250% -120%;
+  background-position: 20% 100% ;
   position: relative;
   float: right;
   z-index: 1;
+  border: none;
 }
 
 .sekcjakostka3 {
@@ -1823,6 +1875,7 @@ cursor: default;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
+  border: none;
 }
 .sekcjakostka3 p {
   margin-top: 3%;
