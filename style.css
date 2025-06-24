@@ -1788,7 +1788,6 @@ cursor: default;
 .sekcjakostka {
   width: 100%;
   height: 100vh;
-  background: white;
   position: relative;
   z-index: 2;
   float: left;
@@ -1801,23 +1800,27 @@ cursor: default;
   font-size: 4vw;
 }
 
+.myciekostki {
+  font-size: 6vw;
+}
+
 .k2 {
   width: 100%;
   height: 100vh;
-  background-image: url('z1.JPG'); 
-  background-size: 600%;
+  background-image: url('k1.JPG'); 
+  background-size: 140%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 100% 20%;
+  background-position:  center;
   position: relative;
   float: left;
   z-index: 1;
+  border: none;
 }
 
 .sekcjakostka2 {
   width: 100%;
   height: 100vh;
-  background: white;
   position: relative;
   z-index: 2;
   float: left;
@@ -1838,17 +1841,21 @@ cursor: default;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
+  font-size: 3.5vw;
 }
 
+.myciekostki2 {
+  font-size: 6vw;
+}
 
 .parallax3 {
   width: 100%;
   height: 100vh;
-  background-image: url(z1.JPG); 
-  background-size: 400%;
+  background-image: url(przedipok.png); 
+  background-size: 130%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 20% 100% ;
+  background-position: center;
   position: relative;
   float: right;
   z-index: 1;
@@ -1858,7 +1865,7 @@ cursor: default;
 .sekcjakostka3 {
   width: 100%;
   height: 100vh;
-  background: white;
+
   position: relative;
   z-index: 2;
   float: left;
@@ -1880,16 +1887,16 @@ cursor: default;
   font-weight: 900;
   font-style: normal;
   border: none;
+  font-size: 3.2vw;
 }
 .sekcjakostka3 p {
   margin-top: 3%;
 }
 
-
 .myciekostki3 {
-  margin-top: 5%;
-  margin-bottom: 1%;
-  font-size: 2.5vw;
+  margin-top: 25%;
+  margin-bottom: 10%;
+  font-size: 6vw;
 
     font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
@@ -1898,15 +1905,18 @@ cursor: default;
 }
 
 .zadzwonk {
-  
-  margin-top: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   align-self: center;
   text-align: center;
   border: 2px solid;
   width: 50%;
+  border: 5px solid;
 }
 
-
+.zadzwonk a {
+  font-size: 6vw;
+}
 
 
 }
