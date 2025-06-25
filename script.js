@@ -35,16 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Przywróć aktywną zakładkę po przeładowaniu strony
-  const savedTab = localStorage.getItem('activeTab');
-  const currentPath = window.location.pathname;
-
-  tabs.forEach(tab => {
-    const tabHref = tab.getAttribute('href');
-    if ((savedTab && tabHref === savedTab) || (!savedTab && tabHref === currentPath)) {
-      tab.classList.add('active');
-    }
-  });
 
   // Kliknięcie poza menu zamyka je
   document.addEventListener('click', function (e) {
