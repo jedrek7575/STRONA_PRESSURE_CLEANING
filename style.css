@@ -1602,7 +1602,7 @@ font-size: 2vw;
   background-color: #000000b3;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   padding: 2%;
   transition: 0.3s ease-in-out;
@@ -1653,7 +1653,7 @@ cursor: default;
 }
 
 .wizja {
-  margin-top: 15%;
+  margin-top: 5%;
   font-size: 5.5vw;
   color: rgb(255, 255, 255);
 
@@ -1662,8 +1662,8 @@ cursor: default;
 
 
 .numer2 {
-  position: absolute;
-  bottom: 5vh;
+  position: relative;
+  margin-top: 2vh;
   font-size: 10vw;
   background-color: #ffffff87;
   border: 5px solid rgb(255, 255, 255);
@@ -1855,7 +1855,6 @@ cursor: default;
 }
 
 .zadzwonk {
-  margin-top: 10%;
   margin-bottom: 10%;
   align-self: center;
   text-align: center;
@@ -1869,5 +1868,11 @@ cursor: default;
   font-size: 6vw;
 }
 
+.malujemy {
+  font-size: 3.5vw;
+}
 
+.myciek1img {
+display: none;
+}
 }
