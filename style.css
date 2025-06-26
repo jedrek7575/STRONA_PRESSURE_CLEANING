@@ -236,7 +236,7 @@ letter-spacing: 2px;
   height: 100vh;
   overflow: hidden;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   background-color: black;
 }
