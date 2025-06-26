@@ -1363,6 +1363,7 @@ align-self: flex-end;
 .tryb.active .line:nth-child(1) {
   transform: translateY(30px) rotate(45deg);
   width: 40px;
+  border: none;
 }
 
 .tryb.active .line:nth-child(2) {
@@ -1371,7 +1372,7 @@ align-self: flex-end;
 
 .tryb.active .line:nth-child(3) {
   transform: translateY(-16px) rotate(-45deg);
-  
+  border: none;
 }
 
 .karty.unzip {
