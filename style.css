@@ -1694,7 +1694,7 @@ cursor: default;
   width: 100%;
   height: 100vh;
   background-image: url('z3.JPG'); 
-  background-size: 130%;
+  background-size: 150%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 100% 60%;
@@ -1705,7 +1705,7 @@ cursor: default;
 }
 
 .parallaxk:hover {
-  background-size: 130%;
+  background-size: 150%;
 }
 
 .sekcjakostka {
@@ -1741,7 +1741,7 @@ cursor: default;
   width: 100%;
   height: 100vh;
   background-image: url('k1.JPG'); 
-  background-size: 140%;
+  background-size: 150%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position:  center;
@@ -1752,7 +1752,7 @@ cursor: default;
 }
 
 .k2:hover {
-  background-size: 140%;
+  background-size: 150%;
 }
 
 .sekcjakostka2 {
@@ -1795,7 +1795,7 @@ cursor: default;
   width: 100%;
   height: 100vh;
   background-image: url(przedipok.png); 
-  background-size: 130%;
+  background-size: 150%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -1806,7 +1806,7 @@ cursor: default;
 }
 
 .parallax3:hover {
-  background-size: 130%;
+  background-size: 150%;
 }
 
 .sekcjakostka3 {
